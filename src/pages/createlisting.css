@@ -1,0 +1,152 @@
+.backgroundCL {
+  background-image: url("./res/CLback.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.formContainerCL {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 20px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid #4ec76855;
+  background: #4ec7687b;
+}
+.formContainerCL::-webkit-scrollbar {
+  width: 5px;
+}
+
+.formContainerCL::-webkit-scrollbar-thumb {
+  background-color: #ffffffa3;
+  border-radius: 4px;
+}
+
+.formContainerCL::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+div.profile main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pageHeader {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formLabel {
+  font-weight: bold;
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.formButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.formButton,
+.formButtonActive {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #4ec76878;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.formButton:hover {
+  background-color: #4ec768;
+  color: #fff;
+}
+
+.formButtonActive {
+  background-color: #4ec76894;
+  color: #fff;
+}
+
+.formInputName,
+.formInputSmall,
+.formInputAddress,
+.formInputFile {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.formInputName:focus,
+.formInputSmall:focus,
+.formInputAddress:focus,
+.formInputFile:focus {
+  border-color: #4ec768;
+}
+
+.formInputFile {
+  border: none;
+  background-color: #f0f0f014;
+  padding: 10px;
+}
+
+.formPriceDiv {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.formPriceText {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.primaryButton {
+  padding: 12px 20px;
+  background-color: #4ec76894;
+  color: #fff;
+  border: 2px solid #4ec76878;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.primaryButton:hover {
+  background-color: #3cb057;
+}
+
+@media (max-width: 600px) {
+  .formRooms {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .formLatLng {
+    flex-direction: column;
+  }
+}

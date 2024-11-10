@@ -1,0 +1,86 @@
+.blurredBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70vw;
+  height: 93vh;
+  background-size: cover;
+  background-position: center;
+  filter: blur(100px);
+  z-index: -1;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.blurredBackground::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90vw;
+  height: 93vh;
+  background-color: rgba(0, 0, 0, 0.299); /* Dark overlay color */
+  z-index: 1; /* Overlay on top of the background */
+}
+
+p.exploreHeading {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div.swiperSlideDiv {
+  height: 670px;
+}
+
+.swiper {
+  width: 50vw;
+  border: #72f28e solid 2px;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #4ce36c !important;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 0 !important;
+  height: 20px !important;
+  width: 24px !important;
+  border: #e0e0e0 solid 1.5px;
+  opacity: 1 !important;
+  background: #2d2d2d46 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #43d964 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  padding: 2rem !important;
+  color: #4cf771 !important;
+  top: 89px !important; /* Position at the top of the slider */
+  transform: translateY(
+    -50%
+  ) !important; /* Center vertically relative to the top */
+  z-index: 10 !important;
+}
+
+.detailsCont {
+  font-size: 40px;
+  color: #ffffff;
+  background-color: #00000083 !important;
+  border-bottom: 0.5px #4ec76822 solid;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 5px;
+}
+
+p.swiperSlideText,
+p.swiperSlidePrice {
+  margin: 0;
+}
+p.swiperSlidePrice {
+  color: #ffffff;
+}

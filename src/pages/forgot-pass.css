@@ -1,0 +1,49 @@
+.formContent {
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid rgb(68, 241, 106);
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  margin-bottom: 7vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageHeaderFP {
+  font-size: 40px;
+}
+
+.form-FP {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.emailInput {
+  border: 1.5px solid #4fc869fd;
+  padding: 5px;
+  width: 100%;
+}
+.emailInput:focus {
+  outline: none;
+  border: 2px solid #5aed7afd;
+}
+
+.resetButton {
+  padding: 10px;
+  background: #4ec768;
+  border: 1px solid #35f55ffd;
+  width: 30%;
+}
+.resetButton:hover {
+  background: #4fc869de;
+  border: 1px solid #4fc869fd;
+}

@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.signIn-wrapper {
+  background-image: url("./res/sign-background.jpg");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(7.1px);
+  -webkit-backdrop-filter: blur(7.1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form-wrapper {
+  background: rgb(130 131 71 / 50%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid rgba(204, 255, 172, 0.33);
+  border-radius: 0;
+  max-height: 85vh;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  margin-bottom: 7vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.sign-brand,
+.form-wrapper p {
+  text-align: center;
+}
+
+.form-wrapper p {
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+  margin: 0;
+}
+
+button#btn-styleM7md.btn.btn-primary.btn-lg {
+  border-radius: 0;
+  background: rgb(255, 255, 255) !important;
+  border: 1px solid rgba(204, 255, 172, 0.33);
+  color: black;
+  font-weight: 500;
+  font-size: 22px;
+}
+button#btn-styleM7md.btn.btn-primary.btn-lg:hover {
+  background: rgb(255 255 255 / 39%) !important;
+  color: white;
+}
+button#btn-styleM7md.btn.btn-primary.btn-lg:active {
+  background: rgba(80, 132, 48, 0.39) !important;
+}
+
+button.btn.btn-primary.btn-lg {
+  border-radius: 0;
+  background: rgba(90, 165, 46, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid rgba(204, 255, 172, 0.33);
+  width: -webkit-fill-available;
+}
+button.btn.btn-primary.btn-lg:hover {
+  background-color: rgba(50, 50, 50, 0.378);
+  border-color: rgba(175, 255, 125, 0.33);
+}
+button.btn.btn-primary.btn-lg:active {
+  background-color: rgba(80, 132, 48, 0.39) !important;
+  border-color: rgb(127, 165, 61);
+  color: rgb(255, 255, 255);
+}
+button.btn.btn-primary.btn-lg img {
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.sign-with-google {
+  margin-bottom: 0;
+}
+
+.form-wrapper hr {
+  margin: 0;
+}
+
+input#name.form-control,
+input#email.form-control,
+input#password.form-control {
+  border-radius: 0;
+  border-color: rgb(246, 255, 231);
+  background-color: transparent;
+  box-shadow: none;
+  color: white;
+}
+input#password.form-control {
+  margin-bottom: 18px;
+}
+input#name.form-control:focus,
+input#email.form-control:focus,
+input#password.form-control:focus {
+  border-color: rgba(155, 255, 73, 0.58) !important;
+}
+
+.form-floating > label,
+.form-floating > label::after {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.forgot-password,
+.sign-up {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.miscLinks {
+  display: inline-flex;
+  justify-content: space-between;
+}
+a.sign-up,
+a.forgot-password {
+  text-decoration: none;
+  color: rgb(156, 255, 90);
+}
+a.sign-up:hover,
+a.forgot-password:hover {
+  color: rgb(255, 255, 255);
+}
+a.sign-up img,
+a.sign-up img .alUser {
+  filter: invert(80%) sepia(32%) saturate(776%) hue-rotate(45deg)
+    brightness(107%) contrast(101%);
+  margin-left: 5px;
+}
+a.sign-up:hover img,
+a.sign-up:hover img .alUser {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(253deg)
+    brightness(105%) contrast(101%);
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  box-shadow: 0 0 0 1000px rgb(112 120 58) inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  border-color: rgba(155, 255, 73, 0.58) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-wrapper {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .form-wrapper p {
+    font-size: 35px;
+  }
+
+  button.btn.btn-primary.btn-lg {
+    font-size: 16px;
+  }
+}

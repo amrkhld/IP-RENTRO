@@ -1,0 +1,314 @@
+.categoryListing {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 350px;
+  max-height: 430px;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
+  border: 2px #4ec768 solid;
+}
+
+.categoryListing:hover {
+  transform: scale(1.02);
+  border: 2px #4ec7688b solid;
+}
+
+.categoryListing:active {
+  transform: scale(1);
+}
+
+.categoryListingLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.categoryListingImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.categoryListingDetails {
+  padding: 15px;
+  text-align: center;
+}
+
+.categoryListingLocation {
+  font-size: 14px;
+  color: gray;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.categoryListingName {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.categoryListingPrice {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.categoryListingInfoDiv {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.categoryListingInfoDiv img {
+  width: 24px;
+  height: 24px;
+}
+
+.categoryListingInfoText {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.removeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  fill: #ff4d4d;
+  width: 20px;
+  height: 20px;
+}
+
+.categoryListing::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #09ad2d63;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.categoryListing:hover::after {
+  opacity: 1;
+}
+
+.categoryListing.profileStyle {
+  flex-direction: row;
+  width: 100%;
+  max-height: 110px;
+  margin: 0px;
+  margin-top: 3px;
+  border: 0;
+}
+.categoryListingLink.profileStyle {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  max-width: 60px;
+}
+
+.categoryListingImg.profileStyle {
+  min-width: 150px;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #4ec768;
+}
+
+.categoryListingDetails.profileStyle {
+  padding: 12px;
+  padding-right: 18px;
+  text-align: left;
+  flex: none;
+  font-size: 13px;
+  max-width: 426%;
+  z-index: 0;
+}
+
+.categoryListingLocation.profileStyle,
+.categoryListingName.profileStyle,
+.categoryListingPrice.profileStyle {
+  font-size: 13px;
+  margin: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.categoryListingPrice.profileStyle {
+  color: #4ec768;
+}
+
+.categoryListingInfoDiv.profileStyle {
+  justify-content: flex-start;
+  margin: 5px 0;
+}
+
+.categoryListingInfoDiv.profileStyle img {
+  width: 20px;
+  height: 20px;
+}
+
+.categoryListingInfoText.profileStyle {
+  font-size: 12px;
+  margin-left: 3px;
+  margin-right: 4px;
+  margin-bottom: 0px;
+}
+
+.removeIcon.profileStyle {
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.bed\/bathRoom.profileStyle {
+  display: contents;
+}
+
+.listingImageWrapper {
+  position: relative;
+}
+.listingImageWrapper.profileStyle {
+display: contents;
+}
+
+.userOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+.userOverlay.profileStyle {
+  display: none;
+}
+
+.categoryListing:hover .userOverlay {
+  opacity: 1;
+}
+
+.userOverlayPhoto {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+.userOverlayPhoto {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.userOverlayName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.categoryListingDetails {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .categoryListing {
+    flex-direction: row;
+    width: 100%;
+    max-height: 110px;
+    margin: 10px;
+  }
+  .categoryListingLink {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    max-width: 60px;
+  }
+
+  .categoryListingImg {
+    min-width: 150px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .categoryListingDetails {
+    padding: 12px;
+    padding-right: 18px;
+    text-align: left;
+    flex: none;
+    font-size: 13px;
+    max-width: 426%;
+  }
+
+  .categoryListingLocation,
+  .categoryListingName,
+  .categoryListingPrice {
+    font-size: 13px;
+    margin: 2px;
+  }
+  .categoryListingPrice {
+    color: #4ec768;
+  }
+
+  .categoryListingInfoDiv {
+    justify-content: flex-start;
+    margin: 5px 0;
+  }
+
+  .categoryListingInfoDiv img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .categoryListingInfoText {
+    font-size: 12px;
+    margin-left: 3px;
+    margin-right: 4px;
+    margin-bottom: 0px;
+  }
+
+  .removeIcon {
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .bed\/bathRoom {
+    display: contents;
+  }
+
+  .userOverlay {
+    display: none;
+  }
+
+  .listingImageWrapper {
+    display: contents;
+    }
+}

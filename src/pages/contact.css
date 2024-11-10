@@ -1,0 +1,101 @@
+.pageContainer main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+p.pageHeaderC {
+  font-size: 44px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.contactLandlord {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  justify-content: center;
+  border-bottom: #5ed979 solid 2px;
+  border-top: #5ed979 solid 2px;
+}
+
+.landlordBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.landlordPhoto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.landlordName {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.messageDiv {
+  margin-bottom: 20px;
+}
+
+.messageLabel {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.textarea {
+  width: 50vw;
+  padding: 10px;
+  border: 1px solid #aeaeae;
+  font-size: 1em;
+  resize: vertical;
+}
+.textarea:focus-visible {
+  outline: 0;
+  border: 1px solid #5ed979;
+}
+
+.formWrapC{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.messageForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  height: 47vh;
+  width: 50%;
+}
+.messageForm a {
+  text-decoration: none;
+}
