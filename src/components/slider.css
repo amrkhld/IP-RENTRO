@@ -18,8 +18,8 @@
   left: 0;
   width: 90vw;
   height: 93vh;
-  background-color: rgba(0, 0, 0, 0.299); /* Dark overlay color */
-  z-index: 1; /* Overlay on top of the background */
+  background-color: rgba(0, 0, 0, 0.299);
+  z-index: 1;
 }
 
 p.exploreHeading {
@@ -60,10 +60,10 @@ div.swiperSlideDiv {
 .swiper-button-next {
   padding: 2rem !important;
   color: #4cf771 !important;
-  top: 89px !important; /* Position at the top of the slider */
+  top: 89px !important;
   transform: translateY(
     -50%
-  ) !important; /* Center vertically relative to the top */
+  ) !important;
   z-index: 10 !important;
 }
 

@@ -115,7 +115,7 @@ function Signup() {
             />
             <label htmlFor="password">Password</label>
           </Form.Floating>
-          {/* Move the Button inside the Form */}
+
           <Button type="submit" variant="primary" size="lg">
             Sign Up
           </Button>

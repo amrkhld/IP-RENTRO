@@ -158,7 +158,6 @@ select:-webkit-autofill {
   border-color: rgba(155, 255, 73, 0.58) !important;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .form-wrapper {
     width: 90%;
