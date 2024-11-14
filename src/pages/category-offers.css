@@ -63,10 +63,18 @@ li.loadMore img.icon {
   width: 45px;
   height: 45px;
   margin-top: 9px;
+  filter: invert(1);
+  transition: filter 0.1s ease;
 }
 li.loadMore:hover {
   background-color: white;
+  color: #4ec768;
 }
+li.loadMore:hover img.icon {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(36%) saturate(663%)
+    hue-rotate(81deg) brightness(94%) contrast(93%);
+}
+
 li.loadMore {
   font-size: 40px;
   display: inline-flex;
@@ -77,7 +85,8 @@ li.loadMore {
   width: 350px;
   min-height: 430px;
   margin: 20px;
-  transition: transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    transform 0.3s ease-in-out;
   background-color: #4ec768;
   border: 2px #4ec768 solid;
   cursor: pointer;
