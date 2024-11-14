@@ -103,6 +103,12 @@ function Listing() {
     }, 250);
   };
 
+  const handleThumbnailClick = (index) => {
+    if (mainSwiperRef.current && mainSwiperRef.current.swiper) {
+      mainSwiperRef.current.swiper.slideTo(index);
+    }
+  };
+
   return (
     <main className="listingContainer">
       <Helmet>
@@ -139,7 +145,10 @@ function Listing() {
           className="thumbs-swiper"
         >
           {listing.imgUrls.map((url, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide
+              key={index}
+              onClick={() => handleThumbnailClick(index)}
+            >
               <img src={url} alt={`Thumbnail ${index + 1}`} />
             </SwiperSlide>
           ))}
