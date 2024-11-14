@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
@@ -25,6 +25,7 @@ function Listing() {
   const navigate = useNavigate();
   const params = useParams();
   const auth = getAuth();
+  const mainSwiperRef = useRef(null);
 
   useEffect(() => {
     const fetchListing = async () => {
@@ -110,6 +111,7 @@ function Listing() {
 
       <div className="swipers Container">
         <Swiper
+          ref={mainSwiperRef}
           slidesPerView={1}
           modules={[Navigation, Scrollbar, A11y, Thumbs]}
           thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
