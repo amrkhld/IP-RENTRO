@@ -2,7 +2,7 @@ import { getFirestore } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD5o0OLS_PR26FEestooOhInSCB2Uwiun0",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "ip-rentro.firebaseapp.com",
   projectId: "ip-rentro",
   storageBucket: "ip-rentro.appspot.com",

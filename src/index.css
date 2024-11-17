@@ -290,9 +290,16 @@ a.right.nav-link:hover::after {
   .messageForm {
     height: 34vh !important;
   }
+
+  .listingDetails {
+    height: 85vh !important;
+  }
 }
 
 @media (min-resolution: 105dpi) and (max-resolution: 115dpi) {
+  .listingDetails {
+    height: 85vh !important;
+  }
   div.container {
     scale: 0.9;
   }
@@ -404,5 +411,23 @@ a.right.nav-link:hover::after {
 
   .textarea {
     width: 100% !important;
+  }
+
+  .blurredBackground {
+    width: 100vw !important;
+    height: 42vh !important;
+    filter: blur(20px) !important;
+  }
+
+  .blurredBackground::before {
+    width: 100vw !important;
+    height: 70vh !important;
+    background-color: #4ec7683b !important;
+  }
+
+  .linkCopied {
+    position: absolute;
+    top: 370px !important;
+    right: 35% !important;
   }
 }
