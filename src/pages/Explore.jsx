@@ -5,6 +5,7 @@ import Slider from "../components/Slider";
 import "./explore.css";
 
 function Explore() {
+
   return (
     <div className="explore">
 
